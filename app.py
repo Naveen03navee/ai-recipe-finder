@@ -36,7 +36,7 @@ if st.button("Generate Recipe", type="primary"):
             
         with st.spinner("Chef AI is thinking..."):
             try:
-                api_url = "http://127.0.0.1:8000/recommend"
+                api_url = "https://ai-recipe-finder-et10.onrender.com"
                 response = requests.post(api_url, json=payload)
                 
                 if response.status_code == 200:
